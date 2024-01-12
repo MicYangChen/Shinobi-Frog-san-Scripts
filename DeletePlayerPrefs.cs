@@ -12,5 +12,12 @@ public class DeletePlayerPrefs : MonoBehaviour
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene(0);
         }
+
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            PlayerPrefs.SetInt("MaxLevel", 9);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene(1);
+        }
     }
 }

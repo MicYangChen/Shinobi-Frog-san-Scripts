@@ -39,17 +39,5 @@ public class BestAttemptMenu : MonoBehaviour
 
         int level7BestAttempt = PlayerPrefs.GetInt("Level 7_BestAttempt", 0);
         level7BestAttemptT.text = level7BestAttempt + " / 3";
-
-        int level8BestAttempt = PlayerPrefs.GetInt("Level 8_BestAttempt", 0);
-        level8BestAttemptT.text = level8BestAttempt + " / 3";
-
-        int level9BestAttempt = PlayerPrefs.GetInt("Level 9_BestAttempt", 0);
-        level9BestAttemptT.text = level9BestAttempt + " / 3";
-
-        int level10BestAttempt = PlayerPrefs.GetInt("Level 10_BestAttempt", 0);
-        level10BestAttemptT.text = level10BestAttempt + " / 3";
-
     }
-
-
 }

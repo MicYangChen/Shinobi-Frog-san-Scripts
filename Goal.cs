@@ -24,13 +24,13 @@ public class Goal : MonoBehaviour
         {
             finishSound.Play();
             levelCompleted = true;
-            Invoke("CompleteLevel", 2f); // Delays 2 second before calling CompleteLevel().
+            Invoke("CompleteLevel", 1f); // Delays 1 second before calling CompleteLevel().
         }
     }
 
     private void CompleteLevel()
     {
-        int maxLevel = PlayerPrefs.GetInt("MaxLevel"); // Max level is 11.
+        int maxLevel = PlayerPrefs.GetInt("MaxLevel"); // Max level index is 9.
         
         if (nextSceneLoad > maxLevel)
         {
@@ -38,8 +38,6 @@ public class Goal : MonoBehaviour
             PlayerPrefs.Save();
         }
         SceneManager.LoadScene(nextSceneLoad);
-
-
     }
 
 }
